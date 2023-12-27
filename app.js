@@ -62,11 +62,16 @@ function initMap() {
   modalTime = document.getElementById("time");
   modalPhone = document.getElementById("phone");
 
+  const icon = {
+    url: "./assets/map.png", // url
+    scaledSize: new google.maps.Size(50, 65), // scaled size
+  };
+
   places.forEach((place) => {
     const marker = new google.maps.Marker({
       position: { lat: place.lat, lng: place.lng },
       map: map,
-      icon: "./assets/map.png",
+      icon: icon,
       title: place.name,
     });
 
