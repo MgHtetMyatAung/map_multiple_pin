@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="main-model">
+      <div id="customModal">
+        <div id="modalContainer">
+          <div id="modalBox">
+            <div class="modal-head">
+              <h3 id="modalTitle"></h3>
+              <img src="./assets/close.svg" alt="" onclick="closeModal()" />
+            </div>
+            <div class="modalDescription">
+              <img src="./assets/location.svg" alt="" />
+              <p id="location"></p>
+            </div>
+            <div class="modalDescription">
+              <img src="./assets/time.svg" alt="" />
+              <p id="time"></p>
+            </div>
+            <div class="modalDescription">
+              <img src="./assets/phone.svg" alt="" />
+              <div id="phone"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js  -->
+    <script src="./app.js"></script>
+    <!-- map  -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAl0sD8kXzBOz_k6H-ekyGmL9j-LTgmXeI"
+      async
+      defer
+    ></script>
+  </body>
+</html>
